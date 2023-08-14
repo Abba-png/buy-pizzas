@@ -24,7 +24,7 @@ pizzaJson.map((item, index)=>{
 
     // Preencher as informações em pizzaitem
     pizzaItem.querySelector('.pizza-item--img img').src = item.img; //Imagem da pizza
-    pizzaItem.querySelector('.pizza-item--price').innerHTML = `R$ ${item.price.toFixed(2)}`; //Preço
+    pizzaItem.querySelector('.pizza-item--price').innerHTML = `$ ${item.price.toFixed(2)}`; //Preço
     pizzaItem.querySelector('.pizza-item--name').innerHTML = item.name; //Nome
     pizzaItem.querySelector('.pizza-item--desc').innerHTML = item.description; //Descrição
 
@@ -47,7 +47,7 @@ pizzaJson.map((item, index)=>{
         c('.pizzaBig img').src = pizzaJson[key].img; //Imagem da pizza
         c('.pizzaInfo h1').innerHTML = pizzaJson[key].name; //Nome
         c('.pizzaInfo--desc').innerHTML = pizzaJson[key].description; //Descrição
-        c('.pizzaInfo--actualPrice').innerHTML = `R$ ${pizzaJson[key].price.toFixed(2)}`; //Preço
+        c('.pizzaInfo--actualPrice').innerHTML = `$ ${pizzaJson[key].price.toFixed(2)}`; //Preço
 
         //Pega item selecionado depois acessa a lista de clases e ai remove a class 'selected'
         c('.pizzaInfo--size.selected').classList.remove('selected');
